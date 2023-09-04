@@ -1,0 +1,3 @@
+rootProject.name = "SmartSimple"
+include ':app'
+include ':lib_smart'
