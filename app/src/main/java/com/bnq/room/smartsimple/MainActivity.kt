@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         val byteArray = ByteArray(input.available())
         input.read(byteArray)
         val base64Str = Base64Util.base64EncodeToString(byteArray)
+        println("----------base64Str: $base64Str")
         val result = hwRecognitionHandle?.performHandwritingRecognition(base64Str)
         tvText?.text = "识别结果: ${result?.res} \n置信度: ${result?.conf}"
     }
