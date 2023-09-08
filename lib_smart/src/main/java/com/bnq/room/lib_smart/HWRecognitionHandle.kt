@@ -7,6 +7,9 @@ import android.content.Context
 import java.io.ByteArrayInputStream
 import java.io.InputStream
 
+/**
+ * version 0.0.2
+ */
 class HWRecognitionHandle private constructor(private val ortEnv:OrtEnvironment,
         private val ortSession: OrtSession){
 
